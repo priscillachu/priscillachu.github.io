@@ -1,17 +1,183 @@
 
- 
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+div {
+	overflow: hidden;
+	margin: 0;
+}
+
+body {
+	background-color: #0000;
+	margin: 0;
+}
+
 p {
-  font-family: Arial;
+  font-family: 'Ubuntu';
+  color: maroon;
+  margin: 0;
+}
+
+
+header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
-  color: maroon;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	float: right;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+.uppercase {
+  text-transform: lowercase;
 }
 
 .title {
-  color: teal;
+  color: white;
+  text-shadow: black 0px 0px 1px;
+  font-family: 'Ubuntu';
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  margin: 0;
+  letter-spacing: 5px;
 }
 
-.uppercase {
-  text-transform: uppercase;
+nav {
+	font-family: 'Ubuntu';
+	font-size: 30px;
+	margin: 0px;
+	padding-bottom: 2px;
+	text-align: right;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 8vh;
+	background-color: #d6719d;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
 }
+
+nav ul{
+	margin: 0;
+}
+
+
+.links {
+	display: flex;
+	text-decoration: none;
+	justify-content: space-around;
+	width: 30%;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	margin: 0;
+}
+
+.links li{
+	list-style: none;
+}
+
+.links ul{
+	margin: 0;
+}
+
+.links a{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+.container {
+	position: relative;
+	font-size: 0px;
+	margin-top: 0px;
+}
+
+.container img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.container2 {
+	position: relative;
+	font-size: 0px;
+}
+
+.container2 img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.motto {
+	
+	position: absolute;
+	top: 280px;
+	left: 80px;
+	width: 100%;
+	font-family: Lora;
+	color: white;
+	letter-spacing: 2px;
+
+}
+
+.motto2 {
+	position: absolute;
+	top: 1200px;
+	right: 50px;
+	width: 100%;
+	font-family: Lora;
+	color: white;
+}
+
+.textBox1 {
+	padding: 7px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	margin: 20px;
+	margin-left: 120px;
+	background-color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+  	color: white;
+}
+
+.carousel-item {
+	font-size: 60px;
+}
+
