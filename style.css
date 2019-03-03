@@ -40,12 +40,29 @@ h2 {
 	margin: 0;
 	padding: 0;
 }
+
+h3 {
+	color: #6bd393;
+	font-style: normal;
+}
+
 .uppercase {
   text-transform: lowercase;
 }
 
 .title {
   color: white;
+  text-shadow: black 0px 0px 1px;
+  font-family: 'Ubuntu';
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+.title2 {
+  color: pink;
   text-shadow: black 0px 0px 1px;
   font-family: 'Ubuntu';
   font-size: 50px;
@@ -81,7 +98,7 @@ nav ul{
 	display: flex;
 	text-decoration: none;
 	justify-content: space-around;
-	width: 30%;
+	width: 35%;
 	padding-left: 30px;
 	padding-top: 10px;
 	padding-bottom: 7px;
@@ -149,15 +166,29 @@ nav ul{
 	color: white;
 }
 
+.form {
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
 .textBox1 {
 	padding: 7px;
 	border-width: 2px;
+	margin: 4px;
 	border-color: black;
 	border-style: solid;
-	margin: 20px;
-	margin-left: 120px;
 	background-color: white;
 }
+
+.textBox2 {
+	padding: 7px;
+	border-width: 2px;
+	margin: 4px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+}
+
 
 .fa {
     padding: 20px;
