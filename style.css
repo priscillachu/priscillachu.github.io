@@ -18,7 +18,7 @@ body {
 p {
   font-family: 'Ubuntu';
   color: maroon;
-  margin: 0;
+  margin: 10px;
 }
 
 
@@ -29,14 +29,15 @@ header {
 }
 
 h1 {
+	color: white;
 	float: left;
 	margin: 0;
 	padding: 0;
 }
 
 h2 {
-	float: right;
-	font-size: 30px;
+	color: grey;
+	float: left;
 	margin: 0;
 	padding: 0;
 }
@@ -46,15 +47,24 @@ h3 {
 	font-style: normal;
 }
 
+table {
+	margin: 0px;
+	padding: 0px;
+}
+
 .uppercase {
   text-transform: lowercase;
+}
+
+.rightAlignTitle{
+	float: right;
 }
 
 .title {
   color: white;
   text-shadow: black 0px 0px 1px;
   font-family: 'Ubuntu';
-  font-size: 50px;
+  font-size: 30px;
   padding-top: 10px;
   padding-bottom: 7px;
   margin: 0;
@@ -72,6 +82,25 @@ h3 {
   letter-spacing: 5px;
 }
 
+/*nav {
+	font-family: 'Ubuntu';
+	font-size: 30px;
+	margin: 0px;
+	padding-bottom: 2px;
+	text-align: right;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 8vh;
+	background-image: linear-gradient(to bottom, rgba(204,99,141,0.9), rgba(204,99,141,1));
+	background-image: linear-gradient(to bottom right, #d13475, blue);
+	background-color: #d6719d;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}*/
+
 nav {
 	font-family: 'Ubuntu';
 	font-size: 30px;
@@ -82,11 +111,15 @@ nav {
 	display: flex;
 	justify-content: center;
 	min-height: 8vh;
-	background-color: #d6719d;
+	background-color: #7daaf2;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 2;
+}
+
+.menuPage {
+	background-image: linear-gradient(to bottom, rgba(0,99,141,0.9), rgba(204,99,141,1));
 }
 
 nav ul{
@@ -123,7 +156,7 @@ nav ul{
 .container {
 	position: relative;
 	font-size: 0px;
-	margin-top: 0px;
+	/*margin-top: 0px;*/
 }
 
 .container img {
@@ -171,36 +204,106 @@ nav ul{
 	padding-top: 50px;
 }
 
+.textBoxes1and2 {
+	display: inline;
+}
+
 .textBox1 {
-	padding: 7px;
+
+	width: 600px;
+	height: 400px;
+	padding: 12px;
+	margin-left: 3px;
+	margin-top: 3px;
 	border-width: 2px;
-	margin: 4px;
 	border-color: black;
 	border-style: solid;
 	background-color: white;
+	float: left;
 }
 
 .textBox2 {
-	padding: 7px;
+	width: 910px;
+	height: 400px;
+	padding: 12px;
+	margin-left: 3px;
+	margin-top: 3px;
 	border-width: 2px;
-	margin: 4px;
 	border-color: black;
 	border-style: solid;
 	background-color: white;
+	float: left;
 }
 
+.textBox3 {
+
+	width: 430px;
+	height: 400px;
+	padding: 12px;
+	margin-left: 16px;
+	margin-top: 90px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	float: left;
+	justify-content: center;
+}
+
+.textBox4 {
+	width: 430px;
+	height: 600px;
+	padding: 12px;
+	margin-top: 90px;
+	margin-left: 16px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	float: left;
+	justify-content: center;
+}
+
+.textBox5 {
+	width: 430px;
+	height: 600px;
+	padding: 12px;
+	margin-top: 90px;
+	margin-left: 16px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	float: left;
+	justify-content: center;
+}
+
+.textBox6 {
+	width: 430px;
+	height: 600px;
+	padding: 12px;
+	margin-top: -175px;
+	margin-left: 16px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	float: left;
+	justify-content: center;
+}
 
 .fa {
-    padding: 20px;
+	margin-top: 10px;
+    padding: 3px;
     font-size: 30px;
-    width: 20px;
+    width: 34px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 80%;
 }
 
 .fa:hover {
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 .fa-facebook {
@@ -208,7 +311,15 @@ nav ul{
   	color: white;
 }
 
+a:hover { 
+  color: #D3D3D3;
+}
+
 .carousel-item {
 	font-size: 60px;
 }
 
+.ContentPic img {
+	max-width: 100%;
+	object-fit: cover;
+}

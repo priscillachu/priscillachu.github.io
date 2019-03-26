@@ -18,11 +18,12 @@
 	<body>
 		<header>
 			<nav>
-				<h1 class="title uppercase">pchu's bakery & juice</h1>
+				<a href="./index.html">
+					<h1 class="title uppercase">pchu's bakery & juice</h1></a>
 				<u1 class="links">
-					<li><a href="./about.html">About Me</a></li> 
+					<li><a href="./about.html">About</a></li> 
 					<li><a href="./recipes.html">Recipes</a></li> 
-					<li><a href="./shop.html">Shop</a></li> 
+					<li><a href="./menu.html">Menu</a></li>
 					<li><a href="./order.html">Order</a></li>
 					<li><a href="./faq.html">FAQ</a></li>
 				</u1>
@@ -30,18 +31,26 @@
 		</header>
 		
 
-		<br><br><br><br><br><br>
+		<br><br><br>
+		<script src="//www.powr.io/powr.js?external-type=html"></script> 
+ 		<div class="powr-instagram-feed" id="df79f1a7_1553638252"></div>
+		<div id="pixlee_container"></div>
+		<script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'_vTLLUx1qQWTOelFjOUE'});Pixlee.addSimpleWidget({widgetId:'16923'});};</script><script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"> 
+			
+		</script>
+		<br><br>
+
+		<p>At this time we only take custom cake orders. Please fill out the form below to specify what you would like in your custom order.</p>
 
 		<div class="form">
-			<form name="htmlform" method="post" action="myscript.php">
+			<form name="htmlform" method="POST" action="orderForm.php">
 			<table width="450px">
-			</tr>
 			<tr>
 			 <td valign="top">
 			  <label for="first_name">First Name</label>
 			 </td>
 			 <td valign="top">
-			  <input  type="text" name="first_name" maxlength="50" size="30">
+			  <input type="text" name="first_name" maxlength="50" size="30">
 			 </td>
 			</tr>
 			 
@@ -50,7 +59,7 @@
 			  <label for="last_name">Last Name</label>
 			 </td>
 			 <td valign="top">
-			  <input  type="text" name="last_name" maxlength="50" size="30">
+			  <input type="text" name="last_name" maxlength="50" size="30">
 			 </td>
 			</tr>
 			<tr>
@@ -58,30 +67,37 @@
 			  <label for="email">Email Address</label>
 			 </td>
 			 <td valign="top">
-			  <input  type="text" name="email" maxlength="80" size="30">
+			  <input type="text" name="email" maxlength="80" size="30">
 			 </td>
-			 
-			</tr>
+			 </tr>
 			<tr>
 			 <td valign="top">
 			  <label for="telephone">Telephone Number</label>
 			 </td>
 			 <td valign="top">
-			  <input  type="text" name="telephone" maxlength="30" size="30">
+			  <input type="text" name="telephone" maxlength="30" size="30">
 			 </td>
 			</tr>
 			<tr>
 			 <td valign="top">
-			  <label for="comments">Comments</label>
+			  <label for="cakeType">Flavor of Cake</label>
 			 </td>
 			 <td valign="top">
-			  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+			  <input type="text" name="cakeType" maxlength="30" size="30">
+			 </td>
+			</tr>
+			<tr>
+			 <td valign="top">
+			  <label for="specialRequests">Tell us the details of what you want in/on your cake! :)</label>
+			 </td>
+			 <td valign="top">
+			  <textarea name="specialRequests" maxlength="1000" cols="25" rows="6"></textarea>
 			 </td>
 			 
 			</tr>
 			<tr>
 			 <td colspan="2" style="text-align:center">
-			  <input type="submit" value="Submit">   ( <a href="https://www.freecontactform.com/html_form.php">HTML Form</a> )
+			  <input type="submit" value="Submit">
 			 </td>
 			</tr>
 			</table>
