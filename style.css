@@ -323,3 +323,7 @@ a:hover {
 	max-width: 100%;
 	object-fit: cover;
 }
+
+.pixlee_container {
+	margin-left: 2px;
+}
