@@ -36,8 +36,8 @@ h1 {
 }
 
 h2 {
-	color: grey;
-	float: left;
+	color: white;
+	float: right;
 	margin: 0;
 	padding: 0;
 }
@@ -193,10 +193,11 @@ nav ul{
 .motto2 {
 	position: absolute;
 	top: 1200px;
-	right: 50px;
+	right: 80px;
 	width: 100%;
 	font-family: Lora;
 	color: white;
+	text-align: end;
 }
 
 .form {
@@ -331,3 +332,20 @@ a:hover {
 .instagram_gallery {
 	margin-top: 150px;
 }
+
+.mission {
+	position: absolute;
+	float: right;
+	top: 1240px;
+	right: 60px;
+	width: 400px;
+	font-family: Lora;
+	color: white;
+	text-align: start;
+}
+
+.mission:hover {
+	color: blue;
+	opacity: 0.4;
+}
+
