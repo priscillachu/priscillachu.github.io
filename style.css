@@ -16,8 +16,7 @@ body {
 }
 
 p {
-  font-family: 'Ubuntu';
-  color: maroon;
+  color: black;
   margin: 10px;
 }
 
@@ -43,8 +42,25 @@ h2 {
 }
 
 h3 {
-	color: #6bd393;
+	color: grey;
 	font-style: normal;
+	font-family: 'Trocchi';
+	padding: 20px;
+}
+
+h4 {
+	color: white;
+	font-style: normal;
+	font-family: 'Montserrat';
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+q {
+	padding: 5px;
+	font-family: 'Trocchi';
+	font-size: 40px;
 }
 
 table {
@@ -52,7 +68,7 @@ table {
 	padding: 0px;
 }
 
-.uppercase {
+.lowercase {
   text-transform: lowercase;
 }
 
@@ -62,22 +78,26 @@ table {
 
 .title {
   color: white;
-  text-shadow: black 0px 0px 1px;
-  font-family: 'Ubuntu';
+  text-shadow: black 0px 0px 2px;
+  font-family: 'Trocchi';
   font-size: 30px;
   padding-top: 10px;
   padding-bottom: 7px;
   margin: 0;
+  /*font-style: bold;*/
+  /*padding: 0;*/
   letter-spacing: 5px;
 }
 
 .title2 {
-  color: pink;
-  text-shadow: black 0px 0px 1px;
-  font-family: 'Ubuntu';
-  font-size: 50px;
+  /*color: #f2c97d;*/
+  color: #f28f7d;
+  text-shadow: black 0px 0px 2px;
+  font-family: 'Trocchi';
+  font-size: 30px;
   padding-top: 10px;
   padding-bottom: 7px;
+  /*padding: 0;*/
   margin: 0;
   letter-spacing: 5px;
 }
@@ -129,6 +149,8 @@ nav ul{
 
 .links {
 	display: flex;
+	/*font-family: 'Open Sans', cursive;*/
+	font-family: 'Ubuntu';
 	text-decoration: none;
 	justify-content: space-around;
 	width: 35%;
@@ -143,7 +165,11 @@ nav ul{
 }
 
 .links ul{
-	margin: 0;
+	margin: 0px;
+}
+
+.FAQ_list{
+	margin-left:30px;
 }
 
 .links a{
@@ -168,13 +194,29 @@ nav ul{
 
 .container2 {
 	position: relative;
-	font-size: 0px;
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("lemon_cupcake.jpg");
+	font-size: 25px;
+}
+
+.text {
+	font-family: 'Montserrat';
 }
 
 .container2 img {
 	max-width: 100%;
 	height: auto;
 	padding: 0;
+	margin: 0;
+}
+
+.container3 {
+	position: relative;
+}
+
+.container3 img {
+	max-width: 60%;
+	height: auto;
+	padding: 50px;
 	margin: 0;
 }
 
@@ -188,16 +230,6 @@ nav ul{
 	color: white;
 	letter-spacing: 2px;
 
-}
-
-.motto2 {
-	position: absolute;
-	top: 1200px;
-	right: 80px;
-	width: 100%;
-	font-family: Lora;
-	color: white;
-	text-align: end;
 }
 
 .form {
@@ -308,6 +340,7 @@ nav ul{
 }
 
 .fa-facebook {
+	position: absolute;
 	background: #3B5998;
   	color: white;
 }
@@ -333,10 +366,20 @@ a:hover {
 	margin-top: 150px;
 }
 
+.motto2 {
+	position: absolute;
+	top: 1800px;
+	right: 80px;
+	width: 100%;
+	font-family: Lora;
+	color: white;
+	text-align: end;
+}
+
 .mission {
 	position: absolute;
 	float: right;
-	top: 1240px;
+	top: 1840px;
 	right: 60px;
 	width: 400px;
 	font-family: Lora;
@@ -344,8 +387,101 @@ a:hover {
 	text-align: start;
 }
 
-.mission:hover {
-	color: blue;
-	opacity: 0.4;
+.blurb {
+	position: absolute;
+	padding: 5px;
+	margin: 2px;
+	float: right;
+	top: 1140px;
+	right: 150px;
+	width: 400px;
+	font-family: Lora;
 }
+
+.title:hover { 
+  color: #f28f7d;
+}
+
+.title2:hover { 
+  color: white;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.answers {
+	margin-right: 700px;
+	margin-left: 15px;
+	padding-top: 5px;
+}
+
+#holidayhrs {
+	padding-top: 7px;
+}
+
+#shipping {
+	padding-top: 30px;
+}
+
+#custom {
+	padding-top: 34px;
+}
+
+#cancelpolicy {
+	padding-top: 7px;
+}
+
+.containerA {
+	position: absolute;
+	width: 450px;
+	top: 200px;
+	left: 400px;
+}
+
+.containerB {
+	position: absolute;
+	width: 450px;
+	top: 250px;
+	left: 500px;
+}
+
+.containerC {
+	position: absolute;
+	width: 500px;
+	top: 300px;
+	left: 600px;
+	margin: 0;
+}
+
+.column-left-locations { 
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 500px;
+	height: 300px;
+	color: white;
+	font-family: 'Lato';
+	padding: 5px;
+	border-color: black;
+	background: rgba(232, 236, 241, 0.2);
+	box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+
+.column-right-more_info { 
+	position: absolute;
+	top: 290px;
+	left: 840px;
+	width: 500px;
+	height: 300px;
+	background: rgba(232, 236, 241, 0.2);
+	color: white;
+	margin: 0;
+	font-family: 'Lato';
+	padding: 5px;
+	box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+
+
+
 
