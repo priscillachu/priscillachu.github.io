@@ -47,64 +47,35 @@
 		<p>At this time we only take custom cake orders. Please fill out the form below to specify what you would like in your custom order.</p>
 
 		<div class="form">
-			<form name="htmlform" method="POST" action="orderForm.php">
-			<table width="450px">
-			<tr>
-			 <td valign="top">
-			  <label for="first_name">First Name</label>
-			 </td>
-			 <td valign="top">
-			  <input type="text" name="first_name" maxlength="50" size="30">
-			 </td>
-			</tr>
-			 
-			<tr>
-			 <td valign="top"">
-			  <label for="last_name">Last Name</label>
-			 </td>
-			 <td valign="top">
-			  <input type="text" name="last_name" maxlength="50" size="30">
-			 </td>
-			</tr>
-			<tr>
-			 <td valign="top">
-			  <label for="email">Email Address</label>
-			 </td>
-			 <td valign="top">
-			  <input type="text" name="email" maxlength="80" size="30">
-			 </td>
-			 </tr>
-			<tr>
-			 <td valign="top">
-			  <label for="telephone">Telephone Number</label>
-			 </td>
-			 <td valign="top">
-			  <input type="text" name="telephone" maxlength="30" size="30">
-			 </td>
-			</tr>
-			<tr>
-			 <td valign="top">
-			  <label for="cakeType">Flavor of Cake</label>
-			 </td>
-			 <td valign="top">
-			  <input type="text" name="cakeType" maxlength="30" size="30">
-			 </td>
-			</tr>
-			<tr>
-			 <td valign="top">
-			  <label for="specialRequests">Tell us the details of what you want in/on your cake! :)</label>
-			 </td>
-			 <td valign="top">
-			  <textarea name="specialRequests" maxlength="1000" cols="25" rows="6"></textarea>
-			 </td>
-			 
-			</tr>
-			<tr>
-			 <td colspan="2" style="text-align:center">
-			  <input type="submit" value="Submit">
-			 </td>
-			</tr>
-			</table>
+			<form id="contactForm">
+			
+				<p>
+					<label>First Name</label>
+				    <input type="text" name="first_name" maxlength="50" size="30" id="first_name" required>
+				</p>
+				<p> 
+					<label>Last Name</label>
+					<input type="text" name="last_name" id="last_name" maxlength="50" size="30" required>
+				</p>
+				<p>  
+				 	<label>Email Address</label>
+				 	<input type="text" name="email" maxlength="80" size="30" id="email" required>
+				</p>
+				<p>
+					<label>Telephone Number</label>
+					<input type="text" name="phone" maxlength="30" size="30" id="phone" required>
+				</p>
+				<p>
+					<label>Flavor of Cake</label>
+					<input type="text" name="cakeType" maxlength="30" size="30" id="cakeType" required>
+				</p>
+				<p class="full">
+					<label>Tell us the details of what you want in/on your cake! :)</label>
+					<textarea name="specialRequests" rows="5" id="specialRequests"></textarea>
+				</p>
+				<p class="full">
+					<button type="submit">Submit</button>
+				</p>
 			</form>
 		</div>
 		<!-- <br>
@@ -119,6 +90,8 @@
 			<a href="https://www.instagram.com/pikapchuu_noms/" class="fa fa-facebook"></a>
 		</center>
 		
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+		<script src="main.js"></script>
 	</body>
 </html>
 
